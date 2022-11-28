@@ -1,0 +1,339 @@
+/* FUENTES */
+
+@font-face{
+	font-family: 'Comic Neue';
+	src: url('./assets/fonts/comic-neue/ComicNeue-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'Comic Neue';
+	src: url('./assets/fonts/comic-neue/ComicNeue-Bold.ttf');
+	font-weight: bold;
+	font-style: normal;
+}
+
+/* GLOBAL */
+
+*{
+    margin:0;
+    padding:0;  
+}
+
+body{
+    max-width: 1440px; /* ancho máximo que va a tener nuestra web*/
+    margin: 0 auto; /* la posicionamos en medio */
+    font-family: 'Comic Neue';
+    font-weight: normal;
+    background-color: #99E2FF;
+}
+
+/* HEADER */
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 140px;
+    background-color: white;
+    border-bottom: 3px solid rgba(211, 211, 211,0.5);
+}
+
+.header__logo{
+    width: 35px;
+}
+
+.nav{
+    font-size: 22px;
+    font-weight: bold;
+    width: 850px;
+}
+
+.nav__list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__item{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.header__button{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: #80B1FF;
+    box-shadow: 0px 2px 0px #6d96d8;
+    border-radius: 8px;
+    padding: 2px 15px;
+}
+
+
+/* MAIN */
+
+.main-banner{
+    position: relative;
+}
+
+.main-banner__video{
+    width: 1440px;
+    display: block; 
+}
+
+.main-banner__title{
+    position: absolute;
+    width: 400px;
+    /* centramos el div */
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    /* podemos centrar imgs así cuando tengan display:inline-block por defecto */
+    text-align: center;  
+}
+
+.main-banner__text-1{
+    width: 400px;
+}
+
+.main-banner__text-2{
+    width: 150px;
+}
+
+.main-banner__button{
+    /* tamaño y posición */
+    position: absolute;
+    bottom:150px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 12px 20px;
+    width: 200px;
+    /* diseño */
+    color: #5086DC;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 3px 0px #6d96d8;
+    border:2px solid;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* SUSCRIBE */
+
+.suscribe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* otra opción en vez del padding hubiese sido
+    crear un contenedor y darle un ancho y posicionarlo
+    en el centro */
+    padding: 20px 220px;
+    background-color: #80B1FF;
+}
+
+.suscribe__description{
+    color: white;
+    font-weight: bold;
+}
+
+.suscribe__title{
+    font-size: 26px;
+    text-shadow: 2px 0px #5086dc;
+}
+
+.suscribe__subtitle{
+    font-size: 20px;
+}
+
+.suscribe__input{
+    font-family: 'Comic Neue';
+    font-weight: bold;
+    padding: 8px 20px;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 3px 0px #6d96d8;
+    border: 1px solid lightgray;
+    color: lightgray;
+}
+
+.suscribe__submit{
+    padding: 8px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    color: #5086DC;
+    background-color: white;
+    border-radius: 8px;
+    border:1px solid;
+    box-shadow: 0px 3px 0px #6d96d8;
+}
+
+
+/* APP */
+
+.app{
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__img{
+    width: 500px;
+}
+
+.app__description{
+    width: 500px;
+    margin-left: -54px;
+}
+
+.app__title{
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0px 2px #80b1ff;
+}
+
+.app__text{
+    color: #313A71;
+    margin-top: 24px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+/* GENESIS BOX */
+
+.genesis-box{
+    position: relative;
+    width: 1000px;
+    margin: 30px auto;
+}
+
+.genesis-box__description{
+    position: absolute;
+    padding: 40px;
+    width: 450px;
+}
+
+.genesis-box__background{
+    width: 1000px;
+    border-radius: 30px;
+}
+
+.genesis-box__img{
+    width: 450px;
+}
+
+.genesis-box__text{
+    color: white;
+    font-weight: bold;
+    margin-top: 25px;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.genesis-box__box{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 450px;
+}
+
+.genesis-box__button{
+    display: block;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 22px;
+    width: 200px;
+}
+
+.genesis-box__button-buy{
+    margin-top: 20px;
+    background-color: #80B1FF;
+    border-radius: 8px;
+    box-shadow: 0px 2px 0px #6d96d8;
+}
+
+.genesis-box__button-learn{
+    margin-top: 5px;
+    text-shadow: 0px 2px black;
+}
+
+/* NEWS */
+
+.news{
+    margin: 80px auto;
+    width: 1200px; 
+}
+
+.news__header{
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.news__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 50px;
+}
+
+.news__item{
+    width: 280px;
+}
+
+.news__img{
+    display: block;
+    width: 280px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.news__description{
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.news__title{
+    padding: 20px 20px 0px 20px;
+    color: #313A71;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.news__date{
+    padding: 20px;
+    color: darkgray;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: #FFA4D4;
+    padding: 40px;
+}
+
+.footer__img{
+    width: 100px;
+}
+
+.footer__copy{
+    margin-top: 10px;
+    color: #FC7CC5;
+    font-weight: bold;
+}
