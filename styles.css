@@ -24,7 +24,7 @@
 body{
     max-width: 1440px; /* ancho máximo que va a tener nuestra web*/
     margin: 0 auto; /* la posicionamos en medio */
-    font-family: 'Comic Neue';
+    font-family: sans-serif;
     font-weight: normal;
     background-color: #99E2FF;
 }
